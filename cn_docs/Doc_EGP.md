@@ -68,7 +68,7 @@
   | ------------- | ------ | ----- |-------------------------------------|
   | name          | string | false | 付款人姓名                               |
   | email         | string | false | 付款人邮箱                               |
-  | phone         | string | false | 付款人手机号                              |
+  | phone         | string | true  | 付款人手机号                              |
   | identify_type | string | false | 证件类型                                |
   | identify_num  | string | false | 证件号码                                |
   | account_no    | string | true  | 付款账号                                |
@@ -517,8 +517,52 @@
 # 11、银行编码
 | 字段名称      | 编码            | 银行名称                                                                                 |
 | :-------- |:--------------|:-------------------------------------------------------------------------------------|
-| bank_code | EGPWALLETS_MM | EGPWALLETS(MobileMoney)                                                              |
-| bank_code | Vodafone      | Vodafone                                                                             |
+| bank_code | IW_EGP | Instant Wallet |
+| bank_code | Vodafone | Vodafone |
+| bank_code | ABDIEGCA_EGP | Abu Dhabi Islamic Bank - Egypt |
+| bank_code | AUB_EGP | Ahly United Bank |
+| bank_code | WABAEGCX_AI_EGP | Al Ahli Bank of Kuwait - Egypt |
+| bank_code | ABRKEGCA_EGP | Al Baraka Bank Egypt |
+| bank_code | ARAIEGCX_EGP | Arab African International Bank |
+| bank_code | ARABEGCX_EGP | Arab Bank |
+| bank_code | EAABEGCX_EGP | Arab Banking Corporation |
+| bank_code | ARIBEGCX_EGP | Arab International Bank |
+| bank_code | AINBEGCA_EGP | Arab Investment Bank |
+| bank_code | ATWFEGCX_EGP | Attijariwafa Bank Egypt S.A.E |
+| bank_code | AUDIEGCA_EGP | Audi Bank |
+| bank_code | ALEXEGCX_EGP | Alex Bank Egypt |
+| bank_code | BCAIEGCX_EGP | Banque Du Caire |
+| bank_code | BMISEGCX_EGP | Banque Misr |
+| bank_code | BBE_EGP | Blom Bank Egypt |
+| bank_code | CBEGEGCX_EGP | Central Bank Of Egypt |
+| bank_code | CITIEGCX_EGP | Citibank |
+| bank_code | CIBEEGCX_EGP | Commercial International Bank |
+| bank_code | AGRIEGCX_EGP | Credit Agricole Egypt |
+| bank_code | EGPOPGCX_EGP | Egypt Post |
+| bank_code | ARLBEGCA_EGP | Egyptian Arab Land Bank |
+| bank_code | EGBKEGCX_EGP | Egyptian Gulf Bank |
+| bank_code | ENBDEGCX_EGP | Emirates National Bank of Dubai |
+| bank_code | EXDEEGCA_EGP | Export Development Bank of Egypt |
+| bank_code | FIBGEGCX_EGP | Faisal Islamic Bank of Egypt |
+| bank_code | FBMEGCA_EGP | First Abu Dhabi Bank |
+| bank_code | HDBKEGCA_EGP | Housing And Development Bank |
+| bank_code | MIDLEGCX_EGP | HSBC |
+| bank_code | IDBEEGCA_EGP | Industrial Development Bank |
+| bank_code | MSHREGCX_EGP | Mashreq Bank |
+| bank_code | MIDEEGCA_EGP | Misr Iran Development Bank |
+| bank_code | NASSEGCA_EGP | Nasser Social Bank |
+| bank_code | NBEGEGCX_EGP | National Bank of Egypt |
+| bank_code | ETHNEGCA_EGP | National Bank of Greece |
+| bank_code | WABAEGCX_NK_EGP | National Bank Of Kuwait - Egypt |
+| bank_code | QNBAAEGCX_EGP | Qatar National Bank Alahli |
+| bank_code | SBNKEGCX_EGP | Societe Arabe Internationale De Banque |
+| bank_code | SCBKEGCX_EGP | Suez Canal Bank |
+| bank_code | BDACEGCA_EGP | Agricultural Bank of Egypt |
+| bank_code | UNBEEGCX_EGP | The United Bank |
+| bank_code | BW_EGP | BankW |
+| bank_code | ETI_EGP | Etisalat |
+| bank_code | ORA_EGP | Orange |
+| bank_code | EGPWALLETS_MM | EGPWALLETS(MobileMoney) |
 
 
 # 12、错误码
