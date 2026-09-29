@@ -107,6 +107,17 @@
 | pay_info     | string | false | 付款信息 json字符串 例如：收、付款原生信息、卡号、名字、银行等 |
 | sign         | string | true  | 签名结果,签名方法在文档顶部                             |
 
+
+- 代收-pay_info 附加参数字段说明
+
+  | 名称      | 类型     | 必填    | 描述                 |
+    |---------|--------|-------|--------------------|
+  | acc_no  | string | false | 收款账户               |
+  | bank    | string | false | 银行信息               |  
+  | memo    | string | false | 收款描述               |  
+  | name    | string | false | 收款人                |  
+  | pay_raw | string | false | 支付原生信息，商户可自行转化为二维码 |
+
 - 代收-下单响应示例
 
 失败:
@@ -135,15 +146,6 @@
 }
 ```
 
-- 代收-pay_info 附加参数字段说明
-
-  | 名称      | 类型     | 必填    | 描述                 |
-  |---------|--------|-------|--------------------|
-  | acc_no  | string | false | 收款账户               |
-  | bank    | string | false | 银行信息               |  
-  | memo    | string | false | 收款描述               |  
-  | name    | string | false | 收款人                |  
-  | pay_raw | string | false | 支付原生信息，商户可自行转化为二维码 |
 
 
 # 5、代收回调通知 post/json

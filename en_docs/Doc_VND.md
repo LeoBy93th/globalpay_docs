@@ -107,6 +107,18 @@ Order address: https://{api_domain}/api/v1/payApi/CreatePayInOrder
 | pay_info   | string | false  | Payment information JSON string. e.g., original pay-in/pay-out info, card number, name, bank, etc. |
 | sign     | string | true   | Signature result, see the top of the document for the signature method.              |
 
+
+- Collection - pay_info Additional Parameters
+
+| Parameter | Type | Required | Description         |
+|-----------|------|----------|---------------------|
+| acc_no | string | false | Recipient Account   |
+| bank | string | false | Bank Information    |
+| memo | string | false | Payment Description |
+| name | string | false | Payee Name          |
+| pay_raw | string | false | Payment Original Information |
+
+
 - Pay-in - Order Response Example
 
 Failure:
@@ -135,16 +147,6 @@ Success:
 }
 ```
 
-
-- Collection - pay_info Additional Parameters
-
-| Parameter | Type | Required | Description         |
-|-----------|------|----------|---------------------|
-| acc_no | string | false | Recipient Account   |
-| bank | string | false | Bank Information    |
-| memo | string | false | Payment Description |
-| name | string | false | Payee Name          |
-| pay_raw | string | false | Payment Original Information |
 
 
 
