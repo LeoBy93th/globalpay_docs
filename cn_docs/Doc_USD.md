@@ -200,6 +200,8 @@
 | routing_number      |string| false | 路由号码（Routing Number）          |
 | card_valid| string| false | 卡号过期时间 格式：MM/YYYY |
 | swift_code         | string | false | 银行国际识别码 (SWIFT Code)           |
+|   email         |   string       |   true     |    邮箱              |
+|  phone          |    string      |   true     |     电话号码             |
 
 
 -  代付-BankCode：ACH_USD 参数说明
@@ -209,12 +211,16 @@
 | account_no            |string| true | 银行帐户号码               |
 | attach.routing_number |string| true | 路由号码（Routing Number） |
 | attach.swift_code     |string| true | 银行国际识别码 (SWIFT Code)           |
+|   attach.email         |   string       |   true     |    邮箱              |
+|  attach.phone          |    string      |   true     |     电话号码             |
+| attach.card_valid| string| true | 卡号过期时间 格式：MM/YYYY |
 
 -  代付-BankCode：PayPal_USD 参数说明
 
 | 名称       | 类型     | 必填   | 描述             |
 |----------|--------|------|----------------|
 | account_no      |string| true | 本人paypal邮箱          |
+|  attach.phone          |    string      |   true     |     电话号码             |
 
 
 -  代付-BankCode：Cash_USD 参数说明
@@ -222,6 +228,8 @@
 | 名称       | 类型     | 必填   | 描述             |
 |----------|--------|------|----------------|
 | account_no      |string| true | cashtag，$开头的收款标签，注意需要带上’$’，长度通常在3到50个字符之间，不包括起始的 “$” 符号，区分大小写，因此 “$YourUsername” 和 “$yourusername” 被视为不同的 cashTag。主要要填写正确的cashtag才能正常收款         |
+|   attach.email         |   string       |   true     |    邮箱              |
+|  attach.phone          |    string      |   true     |     电话号码             |
 
 
 
@@ -231,6 +239,8 @@
 |----------|--------|------|----------------|
 | account_no      |string| true | 卡号          |
 | attach.card_valid| string| true | 卡号过期时间 格式：MM/YYYY |
+|   attach.email         |   string       |   true     |    邮箱              |
+|  attach.phone          |    string      |   true     |     电话号码             |
 
 
 
@@ -239,6 +249,7 @@
 | 名称       | 类型     | 必填   | 描述        |
 |----------|--------|------|-----------|
 | account_no      |string| true | 本人venmo邮箱 |
+|  attach.phone          |    string      |   true     |     电话号码             |
 
 - 代付-请求参数示例
 

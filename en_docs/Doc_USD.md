@@ -200,6 +200,8 @@ Order URL: `https://{api_domain}/api/v1/payApi/CreatePayOutOrder`
 | routing_number | string | false | Routing Number |
 | card_valid | string | false | Card expiration date, format: `MM/YYYY` |
 | swift_code | string | false | Bank Identifier Code (SWIFT Code) |
+| email | string | true | Email address |
+| phone | string | true | Phone number |
 
 - Pay-out BankCode: `ACH_USD` parameter description
 
@@ -208,18 +210,24 @@ Order URL: `https://{api_domain}/api/v1/payApi/CreatePayOutOrder`
 | account_no | string | true | Bank account number |
 | attach.routing_number | string | true | Routing Number |
 | attach.swift_code | string | true | Bank Identifier Code (SWIFT Code) |
+| attach.email | string | true | Email address |
+| attach.phone | string | true | Phone number |
+| attach.card_valid | string | true | Card expiration date, format: `MM/YYYY` |
 
 - Pay-out BankCode: `PayPal_USD` parameter description
 
 | Name | Type | Required | Description |
 |----------|--------|------|----------------|
 | account_no | string | true | Personal PayPal email address |
+| attach.phone | string | true | Phone number |
 
 - Pay-out BankCode: `Cash_USD` parameter description
 
 | Name | Type | Required | Description |
 |----------|--------|------|----------------|
 | account_no | string | true | Cashtag -- a `$` prefixed payment handle. Must include the `$` sign. Length is typically 3 to 50 characters excluding the leading `$`. Cashtags are case-sensitive, so `$YourUsername` and `$yourusername` are treated as different cashtags. Please ensure the correct cashtag is provided for successful receipt. |
+| attach.email | string | true | Email address |
+| attach.phone | string | true | Phone number |
 
 - Pay-out BankCode: `CARD_USD` parameter description
 
@@ -227,12 +235,15 @@ Order URL: `https://{api_domain}/api/v1/payApi/CreatePayOutOrder`
 |----------|--------|------|----------------|
 | account_no | string | true | Card number |
 | attach.card_valid | string | true | Card expiration date, format: `MM/YYYY` |
+| attach.email | string | true | Email address |
+| attach.phone | string | true | Phone number |
 
 - Pay-out BankCode: `VENMO_USD` parameter description
 
 | Name | Type | Required | Description |
 |----------|--------|------|----------------|
 | account_no | string | true | Personal Venmo email address |
+| attach.phone | string | true | Phone number |
 
 - Pay-out request example
 
