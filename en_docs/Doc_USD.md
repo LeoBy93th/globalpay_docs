@@ -603,6 +603,8 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{mer
 | pay_method | ApplePay | ApplePay |
 | pay_method | CashApp | CashApp |
 | pay_method   | googlePay       |      GooglePay  |
+| pay_method         | Visa       |      Visa  |
+| pay_method         | PayPal       |      PayPal  |
 
 # 14. Pay-out Bank Codes
 
