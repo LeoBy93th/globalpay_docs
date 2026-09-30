@@ -604,6 +604,8 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{商
 | pay_method         | ApplePay    | ApplePay |
 | pay_method         | CashApp    | CashApp |
 | pay_method         | googlePay       |      GooglePay  |
+| pay_method         | Visa       |      Visa  |
+| pay_method         | PayPal       |      PayPal  |
 
 
 # 14、代付银行编码 代付字段 bank_code
