@@ -20,7 +20,7 @@
 | 美国   | [点击查看 Doc_USD](./cn_docs/Doc_USD.md) |
 | 泰国   | [点击查看 Doc_THB](./cn_docs/Doc_THB.md) |
 | 马来西亚 | [点击查看 Doc_MYR](./cn_docs/Doc_MYR.md) |
-
+| 柬埔寨 | [点击查看 Doc_KHR](./cn_docs/Doc_KHR.md) |
 
 # English
 
@@ -44,3 +44,4 @@
 | United States | [Doc Doc_USD](./en_docs/Doc_USD.md) |
 | Thailand | [Doc Doc_THB](./en_docs/Doc_THB.md) |
 | Malaysia | [Doc Doc_MYR](./en_docs/Doc_MYR.md) |
+| Cambodia | [Doc Doc_KHR](./en_docs/Doc_KHR.md) |
