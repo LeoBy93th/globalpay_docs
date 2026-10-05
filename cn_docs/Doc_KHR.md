@@ -24,7 +24,7 @@
 
 > 1、本文档中的所有接口，均采用 HTTP 标准通信协议，POST提交，请求和响应的 Content-type 均为 application/json，字符编码统一为 UTF-8。
 >
-> 2、金额单位为<span style="color:red;"> 分 1 KHR=100 </span>。
+> 2、金额单位为<span style="color:red;"> 分 1 KHR=100 或者 1KHRUSD =100</span>。
 >
 > 3、请求接口的 IP 需要加白。
 >
@@ -50,7 +50,7 @@
 | trade_no       | int    | true  | 商户号                                                                                                                                                                           |
 | app_id         | int    | true  | 商户 appId                                                                                                                                                                      |
 | pay_code       | int    | true  | 产品编码,联系我方运营获取                                                                                                                                                                 |
-| pay_method     | string | true  | 支付方式 KHR-Payment                                                                                                                                                                |
+| pay_method     | string | true  | 支付方式                                                                                                                                                               |
 | price          | int    | true  | 下单金额,单位:分 ,整数                                                                                                                                                                 |
 | order_no       | string | true  | 商户订单号                                                                                                                                                                         |
 | success_url    | string | false | 支付成功跳转 url                                                                                                                                                                    |
@@ -188,7 +188,7 @@
 | order_no       | string | true  | 商户订单号                                                |
 | app_id         | int    | true  | 商户 appId                                             |
 | pay_code       | int    | true  | 产品编码,联系我方运营获取                                        |
-| price          | int    | true  | 下单金额,单位:分 ,整数 转元后不能有小数点                              |
+| price          | int    | true  | 下单金额,单位:分 ,整数                             |
 | account_name   | string | true  | 姓名                                                   |
 | bank_code      | string | true  | 收款银行代码 参照银行编码                                        |
 | pay_notice_url | string | false | 代付成功通知 url                                           |
