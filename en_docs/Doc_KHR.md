@@ -509,16 +509,85 @@ With payment voucher:
 }
 ```
 
+# 11、代收银行编码 代收字段 pay_method
 
-# 11. Bank Codes
+| 字段         | 值               | 描述   |
+|------------|------------------|------|
+| pay_method | KHR_QR     | QR transfer |
+| pay_method | KHR_BANK     | BANK transfer |
+
+# 12. Bank Codes
 
 | Field Name | Code       | Bank Name                                              |
 |:-----------|:-----------|:-------------------------------------------------------|
-| bank_code  | ABA        | ABA Bank                                               |
-| bank_code  | ACL        | Wing Bank                     |
-| bank_code  | WING        | Vietnam Bank for Industry and Trade                    |
+| bank_code | KHR_ABA | ABA Bank |
+| bank_code | KHR_AMRET | Amret Plc. |
+| bank_code | KHR_SATHAPANA | Sathapana Bank Plc |
+| bank_code | KHR_AMK | AMK Microfinance Plc. |
+| bank_code | KHR_WING | Wing Bank (Cambodia) Plc |
+| bank_code | KHR_RHB | RHB Bank (Cambodia) Plc. |
+| bank_code | KHR_BRED | BRED Bank (Cambodia) Plc |
+| bank_code | KHR_BOC | Bank of China (Hong Kong) Limited |
+| bank_code | KHR_UPAY | U-Pay Digital Plc |
+| bank_code | KHR_BONGLOY | BongLoy |
+| bank_code | KHR_ARDB | Agricultural and Rural Development Bank |
+| bank_code | KHR_UCB | Union Commercial Bank Plc. |
+| bank_code | KHR_CCU | CCU Commercial Bank PLC. |
+| bank_code | KHR_PHILLIP | Phillip Bank Plc |
+| bank_code | KHR_VATTANAC | Vattanac Bank |
+| bank_code | KHR_TRUEMONEY | TrueMoney Cambodia |
+| bank_code | KHR_ASIA_WEI_LUY | Asia Wei Luy |
+| bank_code | KHR_FTB | Foreign Trade Bank of Cambodia |
+| bank_code | KHR_PPCB | Phnom Penh Commercial Bank |
+| bank_code | KHR_MOHANOKOR | MOHANOKOR MFI Plc. |
+| bank_code | KHR_DGB | DGB Bank |
+| bank_code | KHR_DARA_SAKOR_PAY | Dara Sakor Pay PLC |
+| bank_code | KHR_ALPHA | Alpha Commercial Bank PLC |
+| bank_code | KHR_KESS | Kess Innovation Plc. |
+| bank_code | KHR_AEON | Aeon Specialized Bank (Cambodia) PLC. |
+| bank_code | KHR_KB_PRASAC | KB PRASAC Bank Plc |
+| bank_code | KHR_PRINCE | PRINCE BANK PLC |
+| bank_code | KHR_ACLEDA | ACLEDA Bank Plc. |
+| bank_code | KHR_CAMBODIAN_PUBLIC_BANK | Cambodian Public Bank Plc |
+| bank_code | KHR_EMONEY | eMoney |
+| bank_code | KHR_CAMBODIA_POST_BANK | Cambodia Post Bank Plc |
+| bank_code | KHR_HATTHA | Hattha Bank Plc |
+| bank_code | KHR_MAYBANK | Maybank Cambodia PLC |
+| bank_code | KHR_CAMBODIA_ASIA_BANK | Cambodia Asia Bank |
+| bank_code | KHR_CHIP_MONG | Chip Mong Commercial Bank Plc. |
+| bank_code | KHR_LY_HOUR_PAY_PRO | LY HOUR PAY PRO PLC |
+| bank_code | KHR_CANADIA | Canadia Bank Plc |
+| bank_code | KHR_SPEEDPAY | Speedpay PLC |
+| bank_code | KHR_IBANK | IBANK (CAMBODIA) PLC. |
+| bank_code | KHR_COOL_CASH | Cool Cash Plc |
+| bank_code | KHR_CHIEF | Chief (Cambodia) Commercial Bank Plc. |
+| bank_code | KHR_CATHAY_UNITED | Cathay United Bank (Cambodia) |
+| bank_code | KHR_JTRUST_ROYAL | J Trust Royal Bank Plc. |
+| bank_code | KHR_PANDA | Panda Commercial Bank PLC. |
+| bank_code | KHR_IBK | IBK Bank Cambodia |
+| bank_code | KHR_HONG_LEONG | Hong Leong Bank (Cambodia) Plc |
+| bank_code | KHR_LOLC | LOLC (Cambodia) Plc. |
+| bank_code | KHR_WOORI | Woori Bank (Cambodia) Plc. |
+| bank_code | KHR_BIDC | BIDC Bank |
+| bank_code | KHR_SBI | SBI BANK (CAMBODIA) PLC. |
+| bank_code | KHR_ORIENTAL | Oriental Bank |
+| bank_code | KHR_APD | APD Bank |
+| bank_code | KHR_ICBC | ICBC |
+| bank_code | KHR_SACOMBANK | Sacombank Cambodia |
+| bank_code | KHR_FIRST_COMMERCIAL | First Commercial Bank |
+| bank_code | KHR_HENG_FENG | Heng Feng (Cambodia) Bank |
+| bank_code | KHR_LANTON_PAY | Lanton Pay |
+| bank_code | KHR_MB_CAMBODIA | MBCambodia |
+| bank_code | KHR_BRIDGE | BRIDGE Bank |
+| bank_code | KHR_BOOYOUNG_KHMER | Booyoung Khmer Bank |
+| bank_code | KHR_SHINHAN | Shinhan Bank Cambodia Plc |
+| bank_code | KHR_CIMB | CIMB |
+| bank_code | KHR_SBI_LY_HOUR | SBI LY HOUR Bank Plc. |
+| bank_code | KHR_PEAK_WEALTH | PEAK WEALTH BANK PLC |
+| bank_code | KHR_PI_PAY | Pi Pay Plc. |
+| bank_code | KHR_BIC | B.I.C (Cambodia) Bank Plc. |
 
-# 12. Error Codes
+# 13. Error Codes
 
 | Status Code | Description                                                              |
 |------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -551,7 +620,7 @@ With payment voucher:
 | 9999 | Other errors.                                                             |
 | 3000 | System maintenance, order placement suspended, please try again later.                                 |
 
-# 13. Pay-in Checkout Interface
+# 14. Pay-in Checkout Interface
 
 Address: https://{api_domain}/api/v1/cashApi/CashIn.html
 Request Method: GET
@@ -572,7 +641,7 @@ Request Method: GET
 https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{MerchantOrderNumber}}&amount={{MerchantAmount}}&notice_url={{AsynchronousNotificationAddress}}&pay_code={{ProductCode}}
 ```
 ---
-# 14. Document Update Time
+# 15. Document Update Time
 ```
 2026-08-24 13:05:52
 ```
