@@ -24,7 +24,7 @@
 
 > 1. All interfaces in this document use standard HTTP communication protocols, submitted via POST. Both request and response Content-type are application/json, and the character encoding is unified as UTF-8.
 >
-> 2. The currency unit is <span style="color:red;"> cent  1 KHR=100 </span>.
+> 2. The currency unit is <span style="color:red;"> cent  1 KHR=100 or 1 KHRUSD=100 </span>.
 >
 > 3. The IP address for requesting the interface needs to be whitelisted.
 >
@@ -50,8 +50,8 @@ Order address: https://{api_domain}/api/v1/payApi/CreatePayInOrder
 | trade_no    | int  | true   | Merchant ID.                                                                                                                             |
 | app_id     | int  | true   | Merchant appId.                                                                                                                            |
 | pay_code    | int  | true   | Product code, obtained from our operations.                                                                                                              |
-| pay_method   | string | true   | Payment method: KHR-Payment.                                                                                                                     |
-| price     | int  | true   | Order amount, unit: Xu, integer.                                                                                                                  |
+| pay_method   | string | true   | Payment method.                                                                                                                     |
+| price     | int  | true   | Order amount, unit: cent, integer.                                                                                                                  |
 | order_no    | string | true   | Merchant order number.                                                                                                                        |
 | success_url  | string | false  | Redirect URL for successful payment.                                                                                                                 |
 | fail_url    | string | false  | Redirect URL for failed payment.                                                                                                                   |
@@ -146,8 +146,8 @@ Push address: The `pay_notice_url` provided by the merchant during order placeme
 | status    | int  | true   | Order status: <span style="color:red;">2. Success</span>, 3. Failure.                                                                                                                 |
 | order_no   | string | true   | Merchant order number.                                                                                                                        |
 | dis_order_no | string | true   | Platform order number.                                                                                                                        |
-| order_price | int  | true   | Order amount, unit: Xu.                                                                                                                      |
-| <span style="color:red;">real_price</span>  | int  | true   | <span style="color:red;">Actual amount paid by the user, unit: Xu.</span>                                                                                                             |
+| order_price | int  | true   | Order amount, unit: cent.                                                                                                                      |
+| <span style="color:red;">real_price</span>  | int  | true   | <span style="color:red;">Actual amount paid by the user, unit: cent.</span>                                                                                                             |
 | nti_time   | int  | false  | Notification initiation time.                                                                                                                     |
 | payer    | string | false  | JSON string, payer info: {"name":"Name", "account":"Account", "bank":"User Bank Code", "utr2":"Bank serial number", "email":"Email", "phone":"Phone", "identify_type":"Identity Type", "identify_num":"CPF, CNPJ"}. Also includes payer-related fields from `attach`. |
 | pay_info   | string | false  | Payment information JSON string. e.g., original pay-in/pay-out info, card number, name, bank, etc.                                                                                  |
@@ -189,7 +189,7 @@ Order address: https://{api_domain}/api/v1/payApi/CreatePayOutOrder
 | order_no       | string | true     | Merchant order number                                                                           |
 | app_id         | int    | true     | Merchant appId                                                                                  |
 | pay_code       | int    | true     | Product code, contact our operations team to obtain                                             |
-| price          | int    | true     | Order amount, unit: cents, integer. After conversion to currency unit, decimals are not allowed |
+| price          | int    | true     | Order amount, unit: cents, integer. |
 | account_no     | string | true     | Receiving account                                                                               |
 | account_name   | string | true     | Recipient name                                                                                  |
 | bank_code      | string | true     | Receiving bank code, refer to bank code list                                                    |
@@ -270,8 +270,8 @@ Push address: The `pay_notice_url` provided by the merchant during order placeme
 | trade_no   | int  | true   | Merchant ID.                                            |
 | order_no   | string | true   | Merchant order number.                                       |
 | dis_order_no | string | true   | Platform order number.                                       |
-| order_price | int  | true   | Order amount, unit: Xu.                                     |
-| fee     | int  | false  | Order fee, unit: Xu.                                      |
+| order_price | int  | true   | Order amount, unit: cent.                                     |
+| fee     | int  | false  | Order fee, unit: cent.                                      |
 | <span style="color:red;">real_price</span>   | int    | false | <span style="color:red;">Actual payout amount (only available when the payout succeeds). To use the real_price field, please contact our staff to configure it.</span>                                                                                       |
 | status    | int  | true   | Order status: <span style="color:red;">2. Success</span>, 3. Failure, 7. Rejected, 9. Reversal.                  |
 | pay_info   | string | false  | Payment information JSON string. e.g., original pay-in/pay-out info, card number, name, bank, etc. |
@@ -336,13 +336,13 @@ Query address: https://{api_domain}/api/v1/payApi/QueryOrder
 | code     | int  | true   | 200: Query successful; Others: Failure.                                                                                   |
 | msg     | string | true   | Query failure reason.                                                                                            |
 | trade_no   | int  | true   | Merchant ID.                                                                                                 |
-| <span style="color:red;">real_price</span>  | int  | true   | <span style="color:red;">Actual amount paid, unit: Xu.</span>                                                                                       |
+| <span style="color:red;">real_price</span>  | int  | true   | <span style="color:red;">Actual amount paid, unit: cent.</span>                                                                                       |
 | status    | int  | true   | Order status: 1. Unpaid, <span style="color:red;">2. Success</span>, 3. Failure, 7. Rejected, 9. Reversal, 10. Processing.                                                          |
 | success_time | int  | true   | Success timestamp.                                                                                              |
 | order_no   | string | true   | Merchant order number.                                                                                            |
 | dis_order_no | string | true   | Platform order number.                                                                                            |
 | remark    | string | true   | Reason for pay-out failure.                                                                                         |
-| fee     | int  | false  | Order fee, unit: Xu.                                                                                           |
+| fee     | int  | false  | Order fee, unit: cent.                                                                                           |
 | create_time | int  | true   | Creation time.                                                                                                |
 | payer    | string | false  | JSON string, payer info: {"account_name":"Name", "account_type":"Account Type: PHONE, BANK", "account_no":"Account", "bank_code":"Bank Code"}.       |
 | pay_info   | string | false  | Payment information JSON string. e.g., original pay-in/pay-out info, card number, name, bank, etc.                                                      |
@@ -412,8 +412,8 @@ Address: https://{api_domain}/api/v1/payApi/QueryBalance
 | -------------- | ------ | -------- | ----------------------------------------------------------------------- |
 | code      | int  | true   | 200: Query successful; Others: Failure.                 |
 | msg      | string | true   | Failure reason.                             |
-| balance    | int  | true   | Balance, unit: Xu.                          |
-| balance_frozen | int  | false  | Frozen balance, unit: Xu.                      |
+| balance    | int  | true   | Balance, unit: cent.                          |
+| balance_frozen | int  | false  | Frozen balance, unit: cent.                      |
 | sign      | string | true   | Signature result, see the top of the document for the signature method. |
 
 - Balance Response Example
