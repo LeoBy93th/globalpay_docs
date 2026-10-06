@@ -610,13 +610,14 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{商
 
 # 14、代付银行编码 代付字段 bank_code
 
-| 字段名称      | 编码         | 银行名称 |
+| 字段名称      | 编码       | 银行名称 |
 |:----------|:-----------|:---------|
-| bank_code | ACH_USD    | ach |
-| bank_code | CARD_USD   | card|
-| bank_code | PayPal_USD | paypal |
+| bank_code | ACH_USD    | ach      |
+| bank_code | CARD_USD   | card     |
+| bank_code | PayPal_USD | paypal   |
 | bank_code | Cash_USD   | ecashapp |
-|bank_code |  VENMO_USD  | venmo |
+|bank_code | VENMO_USD  | venmo    |
+|bank_code | CHIME_USD  | chime    |
 
 
 # 15、文档更新时间
