@@ -546,7 +546,7 @@
 https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{商户订单号}}&amount={{商户金额}}&notice_url={{异步通知地址}}&pay_code={{产品编码}}
 ```
 
-# 13、代收银行编码 代收字段 pay_method
+# 13、代收支付方式 代收字段 pay_method
 
 | 字段         | 值               | 描述   |
 |------------|------------------|------|
