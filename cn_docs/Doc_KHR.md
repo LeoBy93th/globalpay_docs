@@ -507,7 +507,7 @@
   "img_base": "data:image/png;base64,hfhshdhfhfh"
 }
 ```
-# 11、代收银行编码 代收字段 pay_method
+# 11、代收支付方式  代收字段 pay_method
 
 | 字段         | 值               | 描述   |
 |------------|------------------|------|
