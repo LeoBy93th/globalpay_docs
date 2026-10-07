@@ -50,7 +50,7 @@
 | trade_no       | int    | true  | 商户号                                                                                                                                                                           |
 | app_id         | int    | true  | 商户 appId                                                                                                                                                                      |
 | pay_code       | int    | true  | 产品编码,联系我方运营获取                                                                                                                                                                 |
-| pay_method     | string | true  | 支付方式                                                                                                                                                               |
+| pay_method     | string | true  | 支付方式,见下方支付方式                                                                                                                                                               |
 | price          | int    | true  | 下单金额,单位:分 ,整数                                                                                                                                                                 |
 | order_no       | string | true  | 商户订单号                                                                                                                                                                         |
 | success_url    | string | false | 支付成功跳转 url                                                                                                                                                                    |
@@ -212,10 +212,9 @@
   "attach": "",
   "sign": "12f74d71fa929087af79b5083567c453",
   "user_ip": "87.200.59.100",
-  "account_type": "BANK",
   "account_no": "1234567890123",
   "account_name": "Nguyen Van A",
-  "bank_code": "VCB"
+  "bank_code": "KHR_ABA"
 }
 ```
 
