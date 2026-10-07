@@ -189,6 +189,7 @@
 | app_id         | int    | true  | 商户 appId                                             |
 | pay_code       | int    | true  | 产品编码,联系我方运营获取                                        |
 | price          | int    | true  | 下单金额,单位:分 ,整数                             |
+| account_no     | string | true  | 收款账号                                |
 | account_name   | string | true  | 姓名                                                   |
 | bank_code      | string | true  | 收款银行代码 参照银行编码                                        |
 | pay_notice_url | string | false | 代付成功通知 url                                           |
