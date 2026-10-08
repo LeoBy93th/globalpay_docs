@@ -527,68 +527,69 @@
 
 
 # 11、银行编码
-| 字段名称 | 编码         | 银行名称 |
-| :--- |:-----------| :--- |
-| bank_code | PVCB       | Vietnam Public Joint Stock Commercial Bank |
-| bank_code | VPB        | Vietnam Prosperity Bank |
-| bank_code | VCB        | Bank for Foreign Trade of Vietnam |
-| bank_code | CTG        | Vietnam Bank for Industry and Trade |
-| bank_code | BIDV       | Bank for Investment & Development of Vietnam |
-| bank_code | EIB        | Vietnam Export Import Commercial Joint Stock Bank |
-| bank_code | TCB        | Vietnam Technological And Commercial Joint Stock Bank |
-| bank_code | TPB        | Tien Phong Commercial Joint Stock Bank |
-| bank_code | LPB        | Viet Nam Post Joint Stock Commercial Bank |
-| bank_code | PGB        | Petrolimex Group Commercial Joint Stock Bank |
-| bank_code | SEAB       | Southeast Asia Commercial Joint Stock Bank |
-| bank_code | SGB        | Saigon Bank For Industry And Trade |
-| bank_code | VIB        | Vietnam International Commercial Joint Stock Bank |
-| bank_code | MBV        | Modern Bank of Vietnam |
+| 字段名称  | 编码       | 银行名称                                               |
+|:----------|:-----------|:-------------------------------------------------------|
+| bank_code | PVCB       | Vietnam Public Joint Stock Commercial Bank             |
+| bank_code | VPB        | Vietnam Prosperity Bank                                |
+| bank_code | VCB        | Bank for Foreign Trade of Vietnam                      |
+| bank_code | CTG        | Vietnam Bank for Industry and Trade                    |
+| bank_code | BIDV       | Bank for Investment & Development of Vietnam           |
+| bank_code | EIB        | Vietnam Export Import Commercial Joint Stock Bank      |
+| bank_code | TCB        | Vietnam Technological And Commercial Joint Stock Bank  |
+| bank_code | TPB        | Tien Phong Commercial Joint Stock Bank                 |
+| bank_code | LPB        | Viet Nam Post Joint Stock Commercial Bank              |
+| bank_code | PGB        | Petrolimex Group Commercial Joint Stock Bank           |
+| bank_code | SEAB       | Southeast Asia Commercial Joint Stock Bank             |
+| bank_code | SGB        | Saigon Bank For Industry And Trade                     |
+| bank_code | VIB        | Vietnam International Commercial Joint Stock Bank      |
+| bank_code | MBV        | Modern Bank of Vietnam                                 |
 | bank_code | HDB        | HoChiMinh City Development Joint Stock Commercial Bank |
-| bank_code | GPB        | Global Petro Bank |
-| bank_code | BVB        | Baoviet Joint Stock Commercial Bank |
-| bank_code | VRB        | Vietnam - Russia Joint Venture Bank |
-| bank_code | VNDSHINHAN | SHINHAN Bank |
-| bank_code | WOORI      | WOORI BANK |
-| bank_code | MSB        | Vietnam Maritime Commercial Joint Stock Bank |
-| bank_code | STB        | Saigon Thuong Tin Commercial Joint Stock Bank |
-| bank_code | NASB       | North Asia Commercial Joint Stock Bank |
-| bank_code | VAB        | Vietnam Asia Commercial Joint Stock Bank |
-| bank_code | ABB        | An Binh Commercial Joint Stock Bank |
-| bank_code | ACB        | Asia Commercial Bank |
-| bank_code | AGRIBANK   | Vietnam Bank For Agriculture and Rural Development |
-| bank_code | MBB        | Military Commercial Joint Stock Bank |
-| bank_code | OCB        | Orient Commercial Joint Stock Bank |
-| bank_code | SHB        | Saigon – Hanoi Commercial Joint Stock Bank |
-| bank_code | NAB        | Nam A Commercial Joint Stock Bank |
-| bank_code | SCB        | Saigon Commercial Bank |
-| bank_code | KLB        | Kien Long Commercial Joint Stock Bank |
-| bank_code | VTTB       | Viet Nam Thuong Tin Commercial Joint Stock Bank |
-| bank_code | VCB_CAP    | Viet Capital Bank |
-| bank_code | PBVN       | Public Bank Vietnam Limited |
-| bank_code | IVB        | Indovina Bank LTD |
-| bank_code | UOB        | United Overseas Bank |
-| bank_code | VIKKI      | Vikki Digital Bank Limited |
-| bank_code | NCB        | National Citizen Bank |
-| bank_code | VIETCREDIT | Công Ty Tài Chính Cổ Phần Tín Việt |
-| bank_code | CIMB       | TNHH MTV CIMB |
-| bank_code | VNDDBS     | DBS Bank (Ho Chi Minh City) |
-| bank_code | UMEE       | UMEE by Kienlongbank |
-| bank_code | NONGHYUP   | NongHyup Bank Hanoi Branch |
-| bank_code | LIO        | Liobank by OCB |
-| bank_code | VNDHSBC    | HSBC Vietnam |
-| bank_code | KB         | KB Kookmin Bank Ha Noi Branch |
-| bank_code | TIMO       | Timo by Viet Capital Bank |
-| bank_code | VNPT       | VNPT Fintech |
-| bank_code | MIRAE      | Mirae Asset Finance Company (Vietnam) |
-| bank_code | CAKE       | Cake by VP Bank |
-| bank_code | VIETTELPAY | Viettel Digital Services Corporation |
-| bank_code | UBANK      | Ubank by VPBank |
-| bank_code | VBSP       | Vietnam bank for social policies |
-| bank_code | VNDKBANK   | Kasikornbank Bank |
-| bank_code | HLB        | Hong Leong Bank Vietnam Limited |
-| bank_code | DAB        | DongA Bank |
-| bank_code | COOP       | Vietnam Cooperative Bank |
-| bank_code        |   BAB           |  Ngân hàng TMCP Bắc Á (BAC A BANK)        |
+| bank_code | GPB        | Global Petro Bank                                      |
+| bank_code | BVB        | Baoviet Joint Stock Commercial Bank                    |
+| bank_code | VRB        | Vietnam - Russia Joint Venture Bank                    |
+| bank_code | VNDSHINHAN | SHINHAN Bank                                           |
+| bank_code | WOORI      | WOORI BANK                                             |
+| bank_code | MSB        | Vietnam Maritime Commercial Joint Stock Bank           |
+| bank_code | STB        | Saigon Thuong Tin Commercial Joint Stock Bank          |
+| bank_code | NASB       | North Asia Commercial Joint Stock Bank                 |
+| bank_code | VAB        | Vietnam Asia Commercial Joint Stock Bank               |
+| bank_code | ABB        | An Binh Commercial Joint Stock Bank                    |
+| bank_code | ACB        | Asia Commercial Bank                                   |
+| bank_code | AGRIBANK   | Vietnam Bank For Agriculture and Rural Development     |
+| bank_code | MBB        | Military Commercial Joint Stock Bank                   |
+| bank_code | OCB        | Orient Commercial Joint Stock Bank                     |
+| bank_code | SHB        | Saigon – Hanoi Commercial Joint Stock Bank             |
+| bank_code | NAB        | Nam A Commercial Joint Stock Bank                      |
+| bank_code | SCB        | Saigon Commercial Bank                                 |
+| bank_code | KLB        | Kien Long Commercial Joint Stock Bank                  |
+| bank_code | VTTB       | Viet Nam Thuong Tin Commercial Joint Stock Bank        |
+| bank_code | VCB_CAP    | Viet Capital Bank                                      |
+| bank_code | PBVN       | Public Bank Vietnam Limited                            |
+| bank_code | IVB        | Indovina Bank LTD                                      |
+| bank_code | UOB        | United Overseas Bank                                   |
+| bank_code | VIKKI      | Vikki Digital Bank Limited                             |
+| bank_code | NCB        | National Citizen Bank                                  |
+| bank_code | VIETCREDIT | Công Ty Tài Chính Cổ Phần Tín Việt                     |
+| bank_code | CIMB       | TNHH MTV CIMB                                          |
+| bank_code | VNDDBS     | DBS Bank (Ho Chi Minh City)                            |
+| bank_code | UMEE       | UMEE by Kienlongbank                                   |
+| bank_code | NONGHYUP   | NongHyup Bank Hanoi Branch                             |
+| bank_code | LIO        | Liobank by OCB                                         |
+| bank_code | VNDHSBC    | HSBC Vietnam                                           |
+| bank_code | KB         | KB Kookmin Bank Ha Noi Branch                          |
+| bank_code | TIMO       | Timo by Viet Capital Bank                              |
+| bank_code | VNPT       | VNPT Fintech                                           |
+| bank_code | MIRAE      | Mirae Asset Finance Company (Vietnam)                  |
+| bank_code | CAKE       | Cake by VP Bank                                        |
+| bank_code | VIETTELPAY | Viettel Digital Services Corporation                   |
+| bank_code | UBANK      | Ubank by VPBank                                        |
+| bank_code | VBSP       | Vietnam bank for social policies                       |
+| bank_code | VNDKBANK   | Kasikornbank Bank                                      |
+| bank_code | HLB        | Hong Leong Bank Vietnam Limited                        |
+| bank_code | DAB        | DongA Bank                                             |
+| bank_code | COOP       | Vietnam Cooperative Bank                               |
+| bank_code | BAB        | Ngân hàng TMCP Bắc Á (BAC A BANK)                      |
+| bank_code | VCBNEO     | Ngân hàng số Vietcombank                               |
 
 
 # 12、错误码
