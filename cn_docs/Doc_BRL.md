@@ -101,7 +101,7 @@
 | code         | int    | true | 200:下单成功 其他:下单失败                                  |
 | msg          | string | true | 失败原因                                              |
 | pay_url      | string | false | 付款链接                                              |
-| qr_code      | string | false | pix 二维码字符串                                        |
+| qr_code      | string | false | pix 二维码base64字符串                                        |
 | order_no     | string | true | 商户订单号                                             |
 | dis_order_no | string | true | 平台订单号                                             |
 | create_time  | int    | true | 创建时间                                              |

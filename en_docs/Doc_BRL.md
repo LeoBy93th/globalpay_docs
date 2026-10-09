@@ -102,7 +102,7 @@ Order address: https://{api_domain}/api/v1/payApi/CreatePayInOrder
 | code     | int  | true   | 200: Success; Others: Failure.                                        |
 | msg     | string | true   | Failure reason.                                                |
 | pay_url   | string | false  | Payment link.                                                 |
-| qr_code   | string | false  | PIX QR code string.                                              |
+| qr_code   | string | false  | PIX QR code base64 string.                                              |
 | order_no   | string | true   | Merchant order number.                                            |
 | dis_order_no | string | true   | Platform order number.                                            |
 | create_time | int  | true   | Creation time.                                                |
