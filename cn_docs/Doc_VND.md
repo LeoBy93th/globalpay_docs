@@ -590,7 +590,7 @@
 | bank_code | COOP       | Vietnam Cooperative Bank                               |
 | bank_code | BAB        | Ngân hàng TMCP Bắc Á (BAC A BANK)                      |
 | bank_code | VCBNEO     | Ngân hàng số Vietcombank                               |
-
+| bank_code | SCVN       | Standard Chartered Bank (Vietnam) Limited              |
 
 # 12、错误码
 
