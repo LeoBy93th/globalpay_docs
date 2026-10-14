@@ -575,25 +575,25 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{商
 | bank_code | BANCAMIA | BANCAMIA |
 | bank_code | AGRARIO | BANCO AGRARIO |
 | bank_code | AV_VILLAS | BANCO AV VILLAS |
-| bank_code | BBVA | BBVA |
+| bank_code | BBVA_COP | BBVA |
 | bank_code | CAJA | BANCO CAJA SOCIAL |
 | bank_code | COOPERATIVO | BANCO COOPERATIVO COOPCENTRAL |
 | bank_code | CREDIFINANCIERA | BANCO CREDIFINANCIERA |
 | bank_code | DAVIVIENDA | DAVIVIENDA |
 | bank_code | DE_BOGOTA | BANCO DE BOGOTA |
 | bank_code | DE_OCCIDENTE | BANCO DE OCCIDENTE |
-| bank_code | FALABELLA | BANCO FALABELLA |
-| bank_code | GNB | BANCO_GNB_SUDAMERIS |
+| bank_code | FALABELLA_COP | BANCO FALABELLA |
+| bank_code | GNB_COP | BANCO_GNB_SUDAMERIS |
 | bank_code | ITAU | ITAU |
-| bank_code | PICHINCHA | PICHINCHA |
+| bank_code | PICHINCHA_COP | PICHINCHA |
 | bank_code | POPULAR | BANCO POPULAR |
-| bank_code | SANTANDER | BANCO SANTANDER COLOMBIA |
+| bank_code | SANTANDER_COP | BANCO SANTANDER COLOMBIA |
 | bank_code | SERFINANZA | BANCO SERFINANZA |
 | bank_code | BANCO_UNION | BANCO UNION antes GIROS |
 | bank_code | BANCOLOMBIA | BANCOLOMBIA |
 | bank_code | BANCOOMEVA | BANCOOMEVA |
 | bank_code | CFA_COOPERATIVA | CFA COOPERATIVA FINANCIERA |
-| bank_code | CITIBANK | CITIBANK |
+| bank_code | CITIBANK_COP | CITIBANK |
 | bank_code | COLTEFINANCIERA | COLTEFINANCIERA |
 | bank_code | CONFIAR_COOPERATIVA | CONFIAR COOPERATIVA FINANCIERA |
 | bank_code | COOFINEP_COOPERATIVA | COOFINEP |
@@ -603,9 +603,8 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{商
 | bank_code | IRIS | IRIS |
 | bank_code | LULO | LULO BANK |
 | bank_code | MOVII | MOVII |
-| bank_code | SCOTIABANK | SCOTIABANK COLPATRIA |
+| bank_code | SCOTIABANK_COP | SCOTIABANK COLPATRIA |
 | bank_code | MIBANCO | Mibanco S.A. |
-| bank_code | FINANDINA_S.A | Banco Finandina |
 | bank_code | MULTI_S.A | Banco Multibank S.A. |
 | bank_code | PROCREDIT_COLOMBIA | Banco Procredit Colombia |
 | bank_code | W_S.A | Banco W S.A |
@@ -644,25 +643,25 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{商
 | bank_code | BANCAMIA | BANCAMIA |
 | bank_code | AGRARIO | BANCO AGRARIO |
 | bank_code | AV_VILLAS | BANCO AV VILLAS |
-| bank_code | BBVA | BBVA |
+| bank_code | BBVA_COP | BBVA |
 | bank_code | CAJA | BANCO CAJA SOCIAL |
 | bank_code | COOPERATIVO | BANCO COOPERATIVO COOPCENTRAL |
 | bank_code | CREDIFINANCIERA | BANCO CREDIFINANCIERA |
 | bank_code | DAVIVIENDA | DAVIVIENDA |
 | bank_code | DE_BOGOTA | BANCO DE BOGOTA |
 | bank_code | DE_OCCIDENTE | BANCO DE OCCIDENTE |
-| bank_code | FALABELLA | BANCO FALABELLA |
-| bank_code | GNB | BANCO_GNB_SUDAMERIS |
+| bank_code | FALABELLA_COP | BANCO FALABELLA |
+| bank_code | GNB_COP | BANCO_GNB_SUDAMERIS |
 | bank_code | ITAU | ITAU |
-| bank_code | PICHINCHA | PICHINCHA |
+| bank_code | PICHINCHA_COP | PICHINCHA |
 | bank_code | POPULAR | BANCO POPULAR |
-| bank_code | SANTANDER | BANCO SANTANDER COLOMBIA |
+| bank_code | SANTANDER_COP | BANCO SANTANDER COLOMBIA |
 | bank_code | SERFINANZA | BANCO SERFINANZA |
 | bank_code | BANCO_UNION | BANCO UNION antes GIROS |
 | bank_code | BANCOLOMBIA | BANCOLOMBIA |
 | bank_code | BANCOOMEVA | BANCOOMEVA |
 | bank_code | CFA_COOPERATIVA | CFA COOPERATIVA FINANCIERA |
-| bank_code | CITIBANK | CITIBANK |
+| bank_code | CITIBANK_COP | CITIBANK |
 | bank_code | COLTEFINANCIERA | COLTEFINANCIERA |
 | bank_code | CONFIAR_COOPERATIVA | CONFIAR COOPERATIVA FINANCIERA |
 | bank_code | COOFINEP_COOPERATIVA | COOFINEP |
@@ -672,9 +671,8 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{商
 | bank_code | IRIS | IRIS |
 | bank_code | LULO | LULO BANK |
 | bank_code | MOVII | MOVII |
-| bank_code | SCOTIABANK | SCOTIABANK COLPATRIA |
+| bank_code | SCOTIABANK_COP | SCOTIABANK COLPATRIA |
 | bank_code | MIBANCO | Mibanco S.A. |
-| bank_code | FINANDINA_S.A | Banco Finandina |
 | bank_code | MULTI_S.A | Banco Multibank S.A. |
 | bank_code | PROCREDIT_COLOMBIA | Banco Procredit Colombia |
 | bank_code | W_S.A | Banco W S.A |
