@@ -38,7 +38,7 @@
 | app_id          | int    | true     | Merchant appId                                                                                                      |
 | pay_code        | int    | true     | Product code, contact our operations to obtain                                                                     |
 | price           | int    | true     | Order amount, unit: cent, integer                                                                                  |
-| pay_method        | string | true     | Payment method: `WALLET`, `CASH`, `TC` (Credit Card), `TD` (Debit Card), `NET_BANKING_CLP` (Bank transfer)         |
+| pay_method        | string | true     | Payment method, see the payment methods below         |
 | order_no        | string | true     | Merchant order number                                                                                               |
 | success_url     | string | false    | Payment success redirect URL                                                                                        |
 | fail_url        | string | false    | Payment failure redirect URL                                                                                        |
@@ -441,58 +441,56 @@ Success:
 | 9999    | Other errors.                                                             |
 | 3000    | System maintenance, order placement suspended, please try again later.                                 |
 
-# 11. Bank Codes
+# 11. Pay-in Payment Methods
+
+| Field Name | Value | Description |
+|-----------|-------|------|
+| pay_method | WALLET | WALLET |
+| pay_method | CASH | CASH |
+| pay_method | TC | TC |
+| pay_method | TD | TD |
+| pay_method | NET_BANKING_CLP | NET BANKING |
+
+# 12. Bank Codes
 | Field Name | Code       | Bank Name |
 | :--- | :--- | :--- |
-| bank_code | 100%Banco | 100%Banco |
-| bank_code | Activo | Banco Activo |
-| bank_code | Bancamiga | Bancamiga |
-| bank_code | Banco de La Nacion Argentina | Banco de La Nacion Argentina |
-| bank_code | Banco del Desarrollo | Banco del Desarrollo |
-| bank_code | Banco do Brasil | Banco do Brasil |
-| bank_code | Banco Internacional | Banco Internacional |
-| bank_code | Banco Nuevo | Banco Nuevo |
-| bank_code | Banco Ptg Pactual | Banco Ptg Pactual |
-| bank_code | Banco Santander | Banco Santander |
-| bank_code | Banco Santiago | Banco Santiago |
-| bank_code | Banesco | Banesco |
-| bank_code | Banplus | Banplus |
-| bank_code | BBPC | Banco BTG Pactual Chile |
-| bank_code | BBVA (Bco Bilbao Vizcaya Arg) | BBVA (Bco Bilbao Vizcaya Arg) |
-| bank_code | BCI | BCI |
+| bank_code | BBVA_CLP | Banco BBVA |
 | bank_code | Bice | Banco Bice |
-| bank_code | Bicentenario | Banco Bicentenario |
-| bank_code | CajaLH | Caja Los Heroes |
-| bank_code | Caroní | Banco Caroní |
-| bank_code | Chile | Banco de Chile |
-| bank_code | CLP_BANK | CLP_BANK |
-| bank_code | CLPScotiabank | Scotiabank |
+| bank_code | BBPC | Banco BTG Pactual Chile |
 | bank_code | Consorcio | Banco Consorcio |
-| bank_code | Coopeuch | Coopeuch |
-| bank_code | del_Caribe | Banco del Caribe |
-| bank_code | del_Tesoro | Banco del Tesoro |
-| bank_code | Deutsche Bank | Deutsche Bank |
+| bank_code | Chile | Banco de Chile |
 | bank_code | Estado | Banco Estado |
-| bank_code | Exterior | Banco Exterior |
-| bank_code | Fondo_Común | Banco Fondo Común |
-| bank_code | Hsbc Bank | Hsbc Bank |
-| bank_code | HSBCBC | HSBC Bank Chile |
-| bank_code | Itau Chile | Itau Chile |
-| bank_code | Itau-Corpbanca | Itau-Corpbanca |
-| bank_code | JP Morgan Chase Bank N.A. | JP Morgan Chase Bank N.A. |
-| bank_code | Los_Andes | Los Andes |
-| bank_code | Mercado_Pago | Mercado Pago |
-| bank_code | Mercantil | Banco Mercantil |
-| bank_code | Nacional_de_Crédito | Banco Nacional de Crédito |
+| bank_code | Falabella_CLP | Banco Falabella |
+| bank_code | Itau_CLP | Banco Itau |
 | bank_code | Paris | Banco Paris |
 | bank_code | Penta | Banco Penta |
-| bank_code | Plaza | Banco Plaza |
-| bank_code | Prepago Los Heroes | Prepago Los Heroes |
-| bank_code | Provincial | Banco Provincial |
-| bank_code | Rabobank | Rabobank |
-| bank_code | Rabobank_Chile | Rabobank Chile |
+| bank_code | Ripley_CLP | Banco Ripley |
 | bank_code | Security | Banco Security |
+| bank_code | BCI | BCI |
+| bank_code | CajaLH | Caja Los Heroes |
+| bank_code | Coopeuch | Coopeuch |
+| bank_code | HSBCBC | HSBC Bank Chile |
+| bank_code | Los_Andes | Los Andes |
+| bank_code | Mercado_Pago | Mercado Pago |
+| bank_code | Rabobank_Chile | Rabobank Chile |
+| bank_code | Santander_CLP | Santander |
+| bank_code | Scotiabank_CLP | Scotiabank |
 | bank_code | Tenpo | Tenpo |
-| bank_code | Tokio-Mitsubishi | The bank of Tokio-Mitsubishi UFJ, LTD |
-| bank_code | Venezolano_de_Crédito | Banco Venezolano de Crédito |
+| bank_code | 100%Banco | 100% Banco |
+| bank_code | Bancamiga | Bancamiga |
+| bank_code | Activo | Banco Activo |
+| bank_code | Bicentenario | Banco Bicentenario |
+| bank_code | Caroní | Banco Caroní |
 | bank_code | Venezuela | Banco de Venezuela |
+| bank_code | del_Caribe | Banco del Caribe |
+| bank_code | del_Tesoro | Banco del Tesoro |
+| bank_code | Exterior | Banco Exterior |
+| bank_code | Fondo_Común | Banco Fondo Común |
+| bank_code | Mercantil | Banco Mercantil |
+| bank_code | Nacional_de_Crédito | Banco Nacional de Crédito |
+| bank_code | Plaza | Banco Plaza |
+| bank_code | Provincial | Banco Provincial |
+| bank_code | Venezolano_de_Crédito | Banco Venezolano de Crédito |
+| bank_code | Banesco | Banesco |
+| bank_code | Banplus | Banplus |
+| bank_code | CLP_BANK | CLP_BANK |
