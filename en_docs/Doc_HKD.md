@@ -174,6 +174,8 @@ Order URL: `https://{api_domain}/api/v1/payApi/CreatePayOutOrder`
 
 ## 6.1 Pay-out Request Parameters
 
+<span style="color:red;">A pay-out request is considered successful unless an explicit failure is returned, even if it times out. Do not submit the request again unless an explicit failure is returned.</span>
+
 | Name             | Type     | Required    | Description                                                                     |
 |----------------|--------|-------|------------------------------------------------------------------------|
 | trade_no       | int    | true  | Merchant number                                                                    |

@@ -164,6 +164,9 @@ If the callback is successfully processed, return <span style="color:red;">succe
 Order URL: https://{api_domain}/api/v1/payApi/CreatePayOutOrder
 
 ## 6.1 Payout – Request Parameters
+
+<span style="color:red;">A pay-out request is considered successful unless an explicit failure is returned, even if it times out. Do not submit the request again unless an explicit failure is returned.</span>
+
 | Name      | Type  | Required | Description                                                                         |
 |----------------|--------|----------|-------------------------------------------------------------------------------------|
 | trade_no    | int  | true     | Merchant ID.                                                                        |
