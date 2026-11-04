@@ -206,7 +206,7 @@
 |----------|--------|------|----------------|
 | phone    | string    | true | 收款人手机号         |
 | email    | string    | true | 邮箱地址           |
-| bank_name    | string    | true | 银行名称           |
+| bank_name    | string    | false | 银行名称           |
 | pay_type |string| true | 支付方式,见下方代付支付方式 |
 
 

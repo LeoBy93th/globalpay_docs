@@ -208,7 +208,7 @@ Order address: https://{api_domain}/api/v1/payApi/CreatePayOutOrder
 |----------|--------|------|----------------|
 | phone    | string | true | Payee's mobile number                                 |
 | email    | string | true | Email address                                         |
-| bank_name    | string | true | Bank name                                         |
+| bank_name    | string | false | Bank name                                         |
 | pay_type | string | true | Payment method. See the Pay-Out payment method list below. |
 
 
