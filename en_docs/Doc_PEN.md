@@ -271,6 +271,68 @@ Success:
 }
 ```
 
+## 6.3 Pay-out Reverse Query Protocol (Optional)
+
+Reverse query support is optional. Merchants choosing to support it must implement an order query endpoint according to this protocol for the platform API to call.
+
+### 6.3.1 Request and Response
+
+The platform API sends JSON using `POST`. The merchant must return HTTP 200 with a flat JSON object. The merchant must verify the request signature and timestamp before querying its own order database. This endpoint is read-only: it must not create orders or initiate payouts, and the same order may be queried multiple times. Each response must echo the nonce from the current request and be signed again.
+
+The request does not include the expected amount. The fields for each direction are listed below; every field listed for that direction is required.
+
+| Field | Type | Request | Response |
+| --- | --- | --- | --- |
+| `trade_no` | int64 | Merchant ID | Return unchanged |
+| `app_id` | int64 | Merchant App ID | Return unchanged |
+| `order_no` | string | Merchant order number `MerOrderNo` | The order number found; if the order does not exist, return the queried order number |
+| `timestamp` | string | Unix timestamp in seconds; the merchant must verify that the time difference does not exceed 300 seconds | Not included |
+| `nonce` | string | 16 cryptographically secure random bytes encoded as 32 lowercase hexadecimal characters | Return unchanged |
+| `price` | int64 | Not included | The original order amount recorded by the merchant, in hundredths of the major currency unit (cents, i.e. the amount in major currency units × 100); `0` if the order does not exist |
+| `status` | string | Not included | `EXISTS` means the order exists; `NOT_FOUND` means it does not exist. This is independent of payment status |
+| `sign` | string | Request signature | A new signature calculated over the response fields |
+
+The following examples use the public test key `demo_merchant_key`. The fixed timestamp and nonce are only for demonstrating signature verification; live requests must use a current timestamp and a fresh, cryptographically secure random nonce.
+
+Request:
+
+```json
+{
+  "trade_no": 10001,
+  "app_id": 10002,
+  "order_no": "M202611050001",
+  "timestamp": "1793836800",
+  "nonce": "00112233445566778899aabbccddeeff",
+  "sign": "9c87ab59f72fc33050c687b19d0f49d6"
+}
+```
+
+Response:
+
+```json
+{
+  "trade_no": 10001,
+  "app_id": 10002,
+  "order_no": "M202611050001",
+  "price": 10000,
+  "status": "EXISTS",
+  "nonce": "00112233445566778899aabbccddeeff",
+  "sign": "8e045eddca1f5c2d22480ceb5681c4ae"
+}
+```
+
+### 6.3.2 Signing and Validation
+
+The signing and validation rules in this section apply to this reverse query endpoint. Exclude `sign` when signing; all other protocol fields must participate, including `price=0`. Convert numeric values to decimal integers and preserve string values unchanged. Sort by field name in ascending order and concatenate as `key=value&key=value` without URL encoding, then append `&key=MERCHANT_SECRET_KEY`. Calculate MD5 over the UTF-8 bytes of the resulting string and output 32 lowercase hexadecimal characters.
+
+The platform API recalculates the signature using the response fields and uses a constant-time comparison. Compare the recalculated result with the signature in the response, not with the original order signature or the signature of the current request. The signing method must not output the signing string containing the secret key.
+
+The platform API validates the structure, signature, and business fields in that order. It continues with prechecks only after all validations pass:
+
+- Reject JSON with missing fields, `null` values, duplicate keys, unknown fields, multiple top-level values, or incorrect types. Numeric values must be within the int64 range. `price` accepts only a JSON integer, not a string, a decimal, or exponent notation.
+- The merchant ID, App ID, and nonce in the response must match the current request. The merchant order number must match exactly, and the existence status must be `status=EXISTS`.
+- The amount must match the platform's locally stored original order amount. The platform's local master order `Amount` is in major currency units: multiply it by 100 using decimal arithmetic, verify that the result is a positive integer and does not overflow int64, and only then convert it to int64. Do not truncate floating-point values or compare against the actual paid amount, credited amount, or fees. Even if `price` is read from the original request, the original master order amount must still be checked.
+
 # 7. Pay-out Callback Notification
 
 Push URL: the `pay_notice_url` submitted by the merchant when creating the order. Callback IP: `call_back_server_ip`. Please add our IP to your callback whitelist.
