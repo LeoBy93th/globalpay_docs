@@ -873,29 +873,8 @@ Payment voucher available:
 | 9999 | Other error                                                                                                                 |
 | 3000 | System is under maintenance. Order placement is suspended. Please try again later.                                          |
 
-# 16. Pay-In Cashier API
-
-Address: https://{api_domain}/api/v1/cashApi/CashIn.html
-Request Method: GET
-
-### Parameters:
-
-| Name    | Type  | Required | Description            |
-|------------|--------|----------|------------------------------------|
-| app_id   | string | true   | Merchant app_id.          |
-| order_no  | string | true   | Merchant order number.       |
-| amount   | string | true   | Merchant amount, unit: Indonesian Rupiah (`IDR`) |
-| notice_url | string | false  | Asynchronous notification address. |
-|pay_code|int|true|Product Code|
-
-#### Example
+# 16. Document Update Time
 
 ```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{MerchantOrderNumber}}&amount={{MerchantAmount}}&notice_url={{AsynchronousNotificationAddress}}&pay_code={{ProductCode}}
-```
-
-# 17. Document Update Time
-
-```
-2026-06-11 01:00:00
+2026-11-17 20:51:12
 ```

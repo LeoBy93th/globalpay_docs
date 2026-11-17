@@ -625,28 +625,7 @@ Voucher available:
 | 9999        | Other errors                                                                                                    |
 | 3000        | System is under maintenance — order placement suspended, please try again later                                 |
 
-# 14. Pay-In Cashier Interface
-
-URL: `https://{api_domain}/api/v1/cashApi/CashIn.html`
-Request Method: GET
-
-### Parameters:
-
-| Name         | Type   | Required | Description                              |
-|--------------|--------|----------|------------------------------------------|
-| app_id       | string | true     | Merchant app_id                          |
-| order_no     | string | true     | Merchant order number                    |
-| amount       | string | true     | Order amount — unit: `Taka` |
-| notice_url   | string | false    | Asynchronous notification URL            |
-| pay_code     | int    | true     | Product code                             |
-
-#### Example
-
+# 14. Document Last Updated
 ```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{merchant_order_no}}&amount={{order_amount}}&notice_url={{async_notification_url}}&pay_code={{product_code}}
-```
-
-# 15. Document Last Updated
-```
-2026-06-17 20:25:00
+2026-11-17 20:51:12
 ```

@@ -599,3 +599,8 @@
 | bank_code | Banesco | Banesco |
 | bank_code | Banplus | Banplus |
 | bank_code | CLP_BANK | CLP_BANK |
+
+# 13、文档更新时间
+```
+2026-11-17 20:51:12
+```

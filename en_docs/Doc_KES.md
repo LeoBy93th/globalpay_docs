@@ -638,28 +638,7 @@ With payment voucher:
 | 9999 | Other errors.                                                             |
 | 3000 | System maintenance, order placement suspended, please try again later.                                 |
 
-# 14. Pay-in Checkout Interface
-
-Address: https://{api_domain}/api/v1/cashApi/CashIn.html
-Request Method: GET
-
-### Parameters:
-
-| Name    | Type  | Required | Description            |
-| ---------- | ------ | -------- | ---------------------------------- |
-| app_id   | string | true   | Merchant app_id.          |
-| order_no  | string | true   | Merchant order number.       |
-| amount   | string | true   | Merchant amount (unit: Kenyan shillings) |
-| notice_url | string | false  | Asynchronous notification address. |
-|pay_code|int|true|Product Code|
-
-#### Example
-
+# 14. Document Update Time
 ```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{MerchantOrderNumber}}&amount={{MerchantAmount}}&notice_url={{AsynchronousNotificationAddress}}&pay_code={{ProductCode}}
-```
-
-# 15. Document Update Time
-```
-2026-09-18 19:32:49
+2026-11-17 20:51:12
 ```

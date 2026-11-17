@@ -603,28 +603,7 @@ Payment voucher available:
 | 9999 | Other errors |
 | 3000 | System maintenance in progress, order placement is suspended, please try again later |
 
-# 12. Pay-in Cashier Interface
-
-URL: `https://{api_domain}/api/v1/cashApi/CashIn.html`
-Request method: `GET`
-
-### Parameters
-
-| Name | Type | Required | Description |
-|--------------|--------|-------|---------------------------|
-| app_id | string | true | Merchant `app_id` |
-| order_no | string | true | Merchant order number |
-| amount | string | true | Merchant amount, unit: Peruvian Sol |
-| notice_url | string | false | Asynchronous callback URL |
-| pay_code | int | true | Product code |
-
-#### Example
-
-```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{merchant_order_no}}&amount={{merchant_amount}}&notice_url={{callback_url}}&pay_code={{product_code}}
-```
-
-# 13. Pay-in Payment Methods
+# 12. Pay-in Payment Methods
 
 | Field Name | Value | Description |
 |-----------|-------|------|
@@ -633,7 +612,7 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{mer
 | pay_method | CHECKOUT | Checkout |
 | pay_method | Peru | Cash |
 
-# 14. Pay-out Payment Methods
+# 13. Pay-out Payment Methods
 
 | Field Name | Value | Description |
 |------------|---------------|------|
@@ -641,7 +620,7 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{mer
 | pay_type | YAPE | Yape |
 | pay_type | PLIN | Plin wallet |
 
-# 15. Pay-out Bank Codes
+# 14. Pay-out Bank Codes
 
 | Field Name | Code | Bank Name |
 |:-----------|:-----|:----------|
@@ -674,7 +653,7 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{mer
 | bank_code | Comercio | Banco de Comercio |
 | bank_code | Credito | Banco de Credito |
 
-# 16. Document Update Time
+# 15. Document Update Time
 ```
-2026-05-22 17:03:00
+2026-11-17 20:51:12
 ```

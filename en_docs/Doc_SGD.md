@@ -667,29 +667,8 @@ Payment voucher available
 | 9999 | Other error |
 | 3000 | The system is undergoing an upgrade and maintenance. Order placement is suspended; please try again later |
 
-# 16. Pay-in Cashier Interface
-
-URL: `https://{api_domain}/api/v1/cashApi/CashIn.html`
-Request Method: `GET`
-
-### Parameters:
-
-| Name | Type | Required | Description |
-| --- | --- | --- | --- |
-| app_id | string | true | Merchant `app_id` |
-| order_no | string | true | Merchant order number |
-| amount | string | true | Merchant amount, unit: Singapore dollars (SGD) |
-| notice_url | string | false | Asynchronous notification URL |
-| pay_code | int | true | Product code |
-
-#### Example
+# 16. Document Update Time
 
 ```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{MerchantOrderNumber}}&amount={{MerchantAmount}}&notice_url={{NotificationURL}}&pay_code={{ProductCode}}
-```
-
-# 17. Document Update Time
-
-```
-2026-09-20 10:00:00
+2026-11-17 20:51:12
 ```

@@ -777,28 +777,8 @@ Payment voucher available
 | 9999 | Other error              |
 |3000|System under upgrade and maintenance, order placement is temporarily suspended, please try again later|
 
-# 14. Pay-in Cashier API
-
-URL: `https://{api_domain}/api/v1/cashApi/CashIn.html`
-Request method: `GET`
-
-### Parameters:
-
-| Name           | Type     | Required    | Description                        |
-|--------------|--------|-------|---------------------------|
-| app_id       | string | true  | Merchant app_id                    |
-| order_no       | string | true  | Merchant order number                     |
-| amount       | string | true  | Merchant amount, unit: Hong Kong Dollar (HKD)                     |
-| notice_url       | string | false | Asynchronous notification URL                     |
-| pay_code       | int    | true | Product code                     |
-
-#### Example
-
-```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{merchant_order_no}}&amount={{merchant_amount}}&notice_url={{async_notification_url}}&pay_code={{product_code}}
-```
 ---
-# 15. Document Update Time
+# 14. Document Update Time
 ```
-2026-08-24 13:05:52
+2026-11-17 20:51:12
 ```

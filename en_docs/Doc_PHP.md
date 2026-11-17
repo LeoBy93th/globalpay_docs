@@ -707,29 +707,8 @@ Payment voucher available:
 
 ---
 
-# 14. Pay-in Cashier API
-
-Address: https://{api_domain}/api/v1/cashApi/CashIn.html
-Request Method: GET
-
-### Parameters:
-
-| Name       | Type   | Required | Description                   |
-| ---------- | ------ | -------- | ----------------------------- |
-| app_id     | string | true     | Merchant app_id               |
-| order_no   | string | true     | Merchant order number         |
-| amount     | string | true     | Merchant amount (unit: Philippine Peso)  |
-| notice_url | string | false    | Asynchronous notification URL |
-|pay_code|int|true|Product Code|
-
-#### Example
-
-```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{MerchantOrderNumber}}&amount={{MerchantAmount}}&notice_url={{AsynchronousNotificationAddress}}&pay_code={{ProductCode}}
-```
-
 ---
-# 15. Document Update Time
+# 14. Document Update Time
 ```
-2026-08-24 13:05:52
+2026-11-17 20:51:12
 ```

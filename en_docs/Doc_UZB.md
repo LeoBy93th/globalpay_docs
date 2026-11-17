@@ -28,7 +28,7 @@
 
 > 1. All APIs in this document use HTTP and the POST method. The Content-Type for both requests and responses is `application/json`, with UTF-8 encoding.
 >
-> 2. Amounts are in <span style="color:red;">tiyin</span>. 1 Uzbekistani som (UZS) = 100 tiyin. The `amount` parameter of the checkout interface in Section 13 uses som (UZS).
+> 2. Amounts are in <span style="color:red;">tiyin</span>. 1 Uzbekistani som (UZS) = 100 tiyin.
 >
 > 3. The IP address used to call the APIs must be added to the whitelist.
 >
@@ -556,30 +556,8 @@ Success:
 | 9999 | Other error |
 | 3000 | System upgrade or maintenance is in progress. Order creation is suspended; please try again later |
 
-# 13. Pay-in Checkout Interface
-
-Endpoint: https://{api_domain}/api/v1/cashApi/CashIn.html
-
-Request method: GET
-
-### Parameters
-
-| Name | Type | Required | Description |
-|------|------|----------|-------------|
-| app_id | string | true | Merchant app_id |
-| order_no | string | true | Merchant order number |
-| amount | string | true | Merchant amount in Uzbekistani som (UZS) |
-| notice_url | string | false | Asynchronous notification URL |
-| pay_code | int | true | Product code |
-
-#### Example
+# 13. Document Update Time
 
 ```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{MerchantOrderNumber}}&amount={{MerchantAmount}}&notice_url={{AsynchronousNotificationURL}}&pay_code={{ProductCode}}
-```
-
-# 14. Document Update Time
-
-```
-2026-09-24 16:38:03
+2026-11-17 20:51:12
 ```

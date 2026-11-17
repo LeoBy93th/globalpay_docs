@@ -603,28 +603,7 @@ Payment certificate available:
 | 9999 | Other error |
 | 3000 | System is under maintenance, order placement is temporarily suspended, please try again later |
 
-# 12. Pay-in Cashier Interface
-
-URL: https://{api_domain}/api/v1/cashApi/CashIn.html
-Request method: GET
-
-### Parameters
-
-| Name | Type | Required | Description |
-|--------------|--------|-------|---------------------------|
-| app_id | string | true | Merchant `app_id` |
-| order_no | string | true | Merchant order number |
-| amount | string | true | Merchant amount, unit: Colombian Peso (`COP`) |
-| notice_url | string | false | Asynchronous callback URL |
-| pay_code | int | true | Product code |
-
-#### Example
-
-```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{merchant_order_no}}&amount={{merchant_amount}}&notice_url={{callback_url}}&pay_code={{pay_code}}
-```
-
-# 13. Pay-in Payment Methods
+# 12. Pay-in Payment Methods
 
 | Field | Value | Description |
 |------------|-------|------|
@@ -635,7 +614,7 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{mer
 | pay_method | BRE_B | BRE_B |
 | pay_method | TRANSFIYA | Transfiya |
 
-# 14. Pay-in Bank Codes
+# 13. Pay-in Bank Codes
 
 | Field | Code | Bank Name |
 |:---------|:-----|:---------|
@@ -692,7 +671,7 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{mer
 | bank_code | RAPPIPAY | Rappipay |
 | bank_code | NU_COLOMBIA | NU COLOMBIA |
 
-# 15. Pay-out Payment Methods
+# 14. Pay-out Payment Methods
 
 | Field | Value | Description |
 |------------|-------|------|
@@ -702,7 +681,7 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{mer
 | pay_type | BRE_B | BRE_B |
 | pay_type | TRANSFIYA | Transfiya |
 
-# 16. Pay-out Bank Codes
+# 15. Pay-out Bank Codes
 
 | Field | Code | Bank Name |
 |:---------|:-----|:---------|
@@ -759,7 +738,7 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{mer
 | bank_code | RAPPIPAY | Rappipay |
 | bank_code | NU_COLOMBIA | NU COLOMBIA |
 
-# 17. Document Update Time
+# 16. Document Update Time
 ```
-2026-06-11 00:30:00
+2026-11-17 20:51:12
 ```

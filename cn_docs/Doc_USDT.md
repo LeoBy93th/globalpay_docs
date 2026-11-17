@@ -590,35 +590,14 @@
 | 9999 | 其他错误              |
 |3000|系统升级维护中，暂停下单，请稍后尝试|
 
-# 12、代收收银台接口
-
-地址: https://{api_domain}/api/v1/cashApi/CashIn.html
-请求方式: GET
-
-### 参数:
-
-| 名称           | 类型     | 必填    | 描述                        |
-|--------------|--------|-------|---------------------------|
-| app_id       | string | true  | 商户app_id                    |
-| order_no       | string | true  | 商户订单号                     |
-| amount       | string | true  | 商户金额，单位USDT（USDT），实际传值为 USDT 金额 x100                     |
-| notice_url       | string | false | 异步通知地址                     |
-| pay_code       | int    | true | 产品编码                     |
-
-#### 示例
-
-```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{商户订单号}}&amount={{商户金额}}&notice_url={{异步通知地址}}&pay_code={{产品编码}}
-```
-
-# 13、代收支付方式 代收字段 pay_method
+# 12、代收支付方式 代收字段 pay_method
 
 | 字段名称      |  值    | 描述      |
 |-----------|-------|---------|
 | pay_method         | USDT-IN    | USDT-代收 |
 
 
-# 14、代付银行编码 代付字段 bank_code
+# 13、代付银行编码 代付字段 bank_code
 
 | 字段名称      | 编码         | 描述      |
 |:----------|:-----------|:--------|
@@ -626,7 +605,7 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{商
 
 
 
-# 15、文档更新时间
+# 14、文档更新时间
 ```
-2026-06-11 00:30:00
+2026-11-17 20:51:12
 ```

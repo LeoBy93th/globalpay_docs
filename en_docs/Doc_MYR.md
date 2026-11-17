@@ -590,35 +590,14 @@ Payment voucher available
 | 9999        | Other error |
 | 3000        | System maintenance in progress, order placement is suspended, please try again later |
 
-# 12. Pay-in Cashier Interface
-
-URL: `https://{api_domain}/api/v1/cashApi/CashIn.html`
-Request Method: `GET`
-
-### Parameters:
-
-| Name       | Type   | Required | Description |
-| ---------- | ------ | -------- | ----------- |
-| app_id     | string | true     | Merchant `app_id` |
-| order_no   | string | true     | Merchant order number |
-| amount     | string | true     | Merchant amount, unit: Ringgit (`RM`) |
-| notice_url | string | false    | Asynchronous callback URL |
-| pay_code   | int    | true     | Product code |
-
-#### Example
-
-```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{merchant_order_no}}&amount={{merchant_amount}}&notice_url={{callback_url}}&pay_code={{product_code}}
-```
-
-# 13. Pay-in Payment Method `pay_method`
+# 12. Pay-in Payment Method `pay_method`
 
 | Field Name | Value    | Description |
 | ---------- | -------- | ----------- |
 | pay_method | MYR-Payment  | Malaysia pay-in |
 
 
-# 14. Pay-in Bank Codes `attach.bank_code`
+# 13. Pay-in Bank Codes `attach.bank_code`
 
 | Field Name | Code | Description |
 |:-----------------|:----------| :------- |
@@ -661,7 +640,7 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{mer
 | attach.bank_code        | MAY       | Maybank |
 | attach.bank_code        | RYT       | RYT Bank |
 
-# 15. Pay-out Bank Codes `bank_code`
+# 14. Pay-out Bank Codes `bank_code`
 
 | Field Name | Code      | Bank Name |
 | :--------- | :-------- | :-------- |
@@ -704,8 +683,8 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{mer
 | bank_code | MAY        | Maybank |
 | bank_code | RYT       | RYT Bank |
 
-# 16. Document Update Time
+# 15. Document Update Time
 
 ```
-2026-08-24 13:05:52
+2026-11-17 20:51:12
 ```

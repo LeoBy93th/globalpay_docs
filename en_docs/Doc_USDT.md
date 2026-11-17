@@ -590,35 +590,14 @@ Payment voucher available
 | 9999 | Other error              |
 |3000|System under upgrade and maintenance, order placement is temporarily suspended, please try again later|
 
-# 12. Pay-in Cashier API
-
-URL: `https://{api_domain}/api/v1/cashApi/CashIn.html`
-Request method: `GET`
-
-### Parameters:
-
-| Name           | Type     | Required    | Description                        |
-|--------------|--------|-------|---------------------------|
-| app_id       | string | true  | Merchant app_id                    |
-| order_no       | string | true  | Merchant order number                     |
-| amount       | string | true  | Merchant amount, unit: USDT (USDT), actual transmitted value is `USDT amount x100`                     |
-| notice_url       | string | false | Asynchronous notification URL                     |
-| pay_code       | int    | true | Product code                     |
-
-#### Example
-
-```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{merchant_order_no}}&amount={{merchant_amount}}&notice_url={{async_notification_url}}&pay_code={{product_code}}
-```
-
-# 13. Pay-in Payment Method `pay_method`
+# 12. Pay-in Payment Method `pay_method`
 
 | Field Name      |  Value    | Description      |
 |-----------|-------|---------|
 | pay_method         | USDT-IN    | USDT pay-in |
 
 
-# 14. Pay-out Bank Code `bank_code`
+# 13. Pay-out Bank Code `bank_code`
 
 | Field Name      | Code         | Description      |
 |:----------|:-----------|:--------|
@@ -626,7 +605,7 @@ https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{mer
 
 
 
-# 15. Document Update Time
+# 14. Document Update Time
 ```
-2026-06-11 00:30:00
+2026-11-17 20:51:12
 ```

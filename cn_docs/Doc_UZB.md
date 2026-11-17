@@ -27,7 +27,7 @@
 ## 3.1 接口相关
 > 1、本文档中的所有接口，均采用 HTTP 标准通信协议，POST提交，请求和响应的 Content-type 均为 application/json，字符编码统一为 UTF-8。
 > 
-> 2、金额单位为<span style="color:red;"> 提因（Tiyin） </span>，1 乌兹别克斯坦苏姆（UZS） = 100 提因。第 13 节收银台接口的 amount 使用苏姆（UZS）。
+> 2、金额单位为<span style="color:red;"> 提因（Tiyin） </span>，1 乌兹别克斯坦苏姆（UZS） = 100 提因。
 > 
 > 3、请求接口的 IP 需要加白。
 > 
@@ -546,28 +546,7 @@
 | 9999 | 其他错误              |
 |3000|系统升级维护中，暂停下单，请稍后尝试|
 
-# 13、代收收银台接口
-
-地址: https://{api_domain}/api/v1/cashApi/CashIn.html
-请求方式: GET
-
-### 参数:
-
-| 名称           | 类型     | 必填    | 描述                        |
-|--------------|--------|-------|---------------------------|
-| app_id       | string | true  | 商户app_id                   |
-| order_no       | string | true  | 商户订单号                     |
-| amount       | string | true  | 商户金额单位：乌兹别克斯坦苏姆（UZS）                    |
-| notice_url       | string | false | 异步通知地址                    |
-| pay_code       | int    | true | 产品编码                     |
-
-#### 示例
-
+# 13、文档更新时间
 ```
-https://{api_domain}/api/v1/cashApi/CashIn.html?app_id={{app_id}}&order_no={{商户订单号}}&amount={{商户金额}}&notice_url={{异步通知地址}}&pay_code={{产品编码}}
-```
-
-# 14、文档更新时间
-```
-2026-09-24 16:38:03
+2026-11-17 20:51:12
 ```
