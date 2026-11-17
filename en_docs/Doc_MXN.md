@@ -706,6 +706,34 @@ Address: https://{api_domain}/api/v1/payApi/QueryCertificate
 | bank_code  |  KLAR_MXN               |    Klar Technologies       | 
 | bank_code |   FONDEADORA              |  Fondeadora    |
 | bank_code |   HEY_BANCO              | HEY BANCO     |
+| bank_code | ACCENDO_BANCO | ACCENDO BANCO |
+| bank_code | AMERICAN_EXPRESS | AMERICAN EXPRES |
+| bank_code | ICBC | ICBC |
+| bank_code | BANK_OF_CHINA | BANK OF CHINA |
+| bank_code | REVOLUT_BANK | REVOLUT BANK |
+| bank_code | ESTRUCTURADORES | ESTRUCTURADORES |
+| bank_code | HDI_SEGUROS | HDI SEGUROS |
+| bank_code | ALTOR | ALTOR |
+| bank_code | CB_INBURSA | C.B. INBURSA |
+| bank_code | CREDICLUB | CREDICLUB |
+| bank_code | OPORMEX | OPORMEX |
+| bank_code | TE_CREEMOS | TE CREEMOS |
+| bank_code | SC_PROM_Y_OP | SC PROM Y OP |
+| bank_code | CAPITAL_ACTIVO | CAPITAL ACTIVO |
+| bank_code | BURSAMETRICA | BURSAMETRICA |
+| bank_code | NVIO | NVIO |
+| bank_code | CASHI_CUENTA | CASHI CUENTA |
+| bank_code | MEXPAGO | MexPago |
+| bank_code | ALBO | albo |
+| bank_code | CUENCA | Cuenca |
+| bank_code | COOPDESARROLLO | COOPDESARROLLO |
+| bank_code | DEP_Y_PAG_DIG | Dep y Pag Dig |
+| bank_code | CLIP | Clip |
+| bank_code | PEIBO | Peibo |
+| bank_code | FINCO_PAY | FINCO PAY |
+| bank_code | FINTOC | FINTOC |
+| bank_code | CLS | CLS |
+| bank_code | BANCOBRO | BanCobro |
 
 # 13. Error Codes
 
