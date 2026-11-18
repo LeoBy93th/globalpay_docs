@@ -57,7 +57,7 @@
 | pay_notice_url | string | false | 支付成功通知 url                                                                                                                |
 | user_id        | string | true | 系统用户ID                                                                                                                    |
 | user_ip        | string | true | 付款人 IP                                                                                                                    |
-|attach|string|true| 附加参数 json字符串  {\"name\":\"bob james\"，\"identify_type\":\"CPF\",\"identify_num\":\"61035067358\"} `pay_method=PIX 需要用户名、证件信息` |
+|attach|string|false| 附加参数 json字符串  {\"name\":\"bob james\"，\"identify_type\":\"CPF\",\"identify_num\":\"61035067358\"} `pay_method=PIX 需要用户名、证件信息` |
 | sign           | string | true  | 签名结果,签名方法在文档顶部                                                                                                            |
 |timestamp|string|false| 下单时间戳 10位时间戳单位S                                                                                                           |
 

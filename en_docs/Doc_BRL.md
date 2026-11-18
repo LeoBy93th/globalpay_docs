@@ -57,7 +57,7 @@ Order address: https://{api_domain}/api/v1/payApi/CreatePayInOrder
 | pay_notice_url | string | false  | Notification URL for successful payment.                                                                                               |
 | user_id    | string | true   | System user ID.                                                                                                            |
 | user_ip    | string | true   | Payer IP address.                                                                                                           |
-| attach     | string | true   | Additional parameters in JSON string format. e.g., {\"name\":\"bob james\", \"identify_type\":\"CPF\", \"identify_num\":\"61035067358\"}   `pay_method=PIX requires a username and identification details.`                                            |
+| attach     | string | false   | Additional parameters in JSON string format. e.g., {\"name\":\"bob james\", \"identify_type\":\"CPF\", \"identify_num\":\"61035067358\"}   `pay_method=PIX requires a username and identification details.`                                            |
 | sign      | string | true   | Signature result, see the top of the document for the signature method.                                                                                |
 | timestamp   | string | false  | Order timestamp (10-digit timestamp in seconds).                                                                                           |
 
