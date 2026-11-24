@@ -21,6 +21,7 @@
 | 泰国   | [点击查看 Doc_THB](./cn_docs/Doc_THB.md) |
 | 马来西亚 | [点击查看 Doc_MYR](./cn_docs/Doc_MYR.md) |
 | 柬埔寨 | [点击查看 Doc_KHR](./cn_docs/Doc_KHR.md) |
+| 尼日利亚 | [点击查看 Doc_NGN](./cn_docs/Doc_NGN.md) |
 
 # English
 
@@ -45,3 +46,4 @@
 | Thailand | [Doc Doc_THB](./en_docs/Doc_THB.md) |
 | Malaysia | [Doc Doc_MYR](./en_docs/Doc_MYR.md) |
 | Cambodia | [Doc Doc_KHR](./en_docs/Doc_KHR.md) |
+| Nigeria | [Doc Doc_NGN](./en_docs/Doc_NGN.md) |
