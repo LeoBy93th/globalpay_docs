@@ -57,8 +57,8 @@
 | name            | string | true     | Payer name                                                     |
 | identify_type   | string | true     | ID type: `RUT` (Tax ID), `PP` (Passport)                       |
 | identify_num    | string | true     | ID number: RUT (9 digits: 8 digits + check digit), PP (9 to 16 characters) |
-| phone           | string | false    | Phone number (provide real phone number if possible, can be filled if not available) |
-| email           | string | false    | Email (provide real email if possible, can be filled if not available) |
+| phone           | string | true    | Phone number (provide real phone number if possible, can be filled if not available) |
+| email           | string | true    | Email (provide real email if possible, can be filled if not available) |
 
 - **Collection – Order Request Example**
 
@@ -193,7 +193,7 @@ Order URL: https://{api_domain}/api/v1/payApi/CreatePayOutOrder
 | Name        | Type   | Required | Description      |
 |-------------|--------|----------|------------------|
 | phone       | string | false    | Recipient phone number |
-| email       | string | false    | Email address    |
+| email       | string | true    | Email address    |
 | bank_name   | string | true     | Bank name        |
 
 

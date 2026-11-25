@@ -69,8 +69,8 @@
 | name          | string | true  | 付款人姓名                 |
 | identify_type | string    | true  | 证件类型支持 RUT（税号）,PP（护照） |
 | identify_num  | string    | true  | 证件号码 RUT（9 位（8 位数字 + 校验位））,PP（9 到 16 位字符）                 |
-| phone         | string    | false | 手机号(尽量传真实手机号，没有可填充)   |
-| email         | string    | false | 邮箱(尽量传真实邮箱，没有可填充)     |
+| phone         | string    | true | 手机号(尽量传真实手机号，没有可填充)   |
+| email         | string    | true | 邮箱(尽量传真实邮箱，没有可填充)     |
 
 - 代收-下单请求示例
 
@@ -214,7 +214,7 @@
 | 名称        | 类型     | 必填    | 描述             |
 |-----------|--------|-------|----------------|
 | phone     | string    | false | 收款人手机号         |
-| email     | string    | false | 邮箱地址           |
+| email     | string    | true | 邮箱地址           |
 | bank_name  | string    | true  | 银行名称 |
 
 
