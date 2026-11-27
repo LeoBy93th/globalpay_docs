@@ -436,8 +436,8 @@ Failure:
 
 ```json
 {
-  "code": 10009,
-  "msg": "Order does not exist"
+  "code": 1017,
+  "msg": "Order record does not exist"
 }
 ```
 

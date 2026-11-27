@@ -442,7 +442,7 @@ Failure:
 ```json
 {
  "code": 1017,
- "msg": "Order does not exist"
+ "msg": "Order record does not exist"
 }
 ```
 
